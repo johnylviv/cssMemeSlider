@@ -8,24 +8,42 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section id="slider">
-        <input type="radio" name="slider" id="s1" checked>
-        <input type="radio" name="slider" id="s2">
-        <input type="radio" name="slider" id="s3">
-        <input type="radio" name="slider" id="s4">
+    <div class="container">
+        <div class="slider__wrap" role="slider">
 
-        <label for="s1" id="slide1">1</label>
-        <label for="s2" id="slide2">2</label>
-        <label for="s3" id="slide3">3</label>
-        <label for="s4" id="slide4">4</label>
-    </section>
-    <div class="text">
-        <div class="slider__description">
-            <p class="slide slide1">If code works don't touch it!</p>
-            <p class="slide slide2">First rule of programming</p>
-            <p class="slide slide3">Why code don't work / works?</p>
-            <p class="slide slide4">99 bugs in the code</p>
+          <input type="radio" name="slider__control" id="r1" checked/> 
+          <input type="radio" name="slider__control" id="r2"/>
+          <input type="radio" name="slider__control" id="r3"/>
+          <input type="radio" name="slider__control" id="r4"/>
+          <div class="slider__wrap-content">
+
+            <div class="slider__content">
+              <div class="slide slide-1"></div>
+              <div class="slide slide-2"></div>
+              <div class="slide slide-3"></div>
+              <div class="slide slide-4"></div>
+            </div>
+
+          </div>
+
+          <div class="slider__wrap-text">
+            <div class="slider__description">
+
+                <p class="slide slide1">If code works don't touch it!</p>
+                <p class="slide slide2">First rule of programming</p>
+                <p class="slide slide3">Why code don't work / works?</p>
+                <p class="slide slide4">99 bugs in the code</p>
+
+            </div>
+          </div>
+
+          <div class="slider__control">
+            <label for="r1" class="slider__control-1"></label> 
+            <label for="r2" class="slider__control-2"></label>
+            <label for="r3" class="slider__control-3"></label>
+            <label for="r4" class="slider__control-4"></label>
+          </div>
         </div>
-    </div>
+      </div>
 </body>
 </html>
